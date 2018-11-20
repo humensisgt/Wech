@@ -53,7 +53,9 @@ var app = {
     onDeviceReady: function() {
         console.log('Received Device Ready Event');
         console.log('calling setup push');
-		navigator.geolocation.getCurrentPosition(onSuccess, onError);
+		alert("call geolocalisation")
+		navigator.geolocation.getCurrentPosition(this.onSuccess,this.onError);
+		alert("fin");
 		//alert("pret");
         app.setupPush();
     },
