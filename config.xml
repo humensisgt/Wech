@@ -21,7 +21,9 @@
     <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.1" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
 	
-    <plugin name="cordova-plugin-geolocation" spec="~4.0.1" />
+   <plugin name="cordova-plugin-geolocation" source="npm">  
+<param name="GEOLOCATION_USAGE_DESCRIPTION" value="Wech utilise la géolocalisation pour trouver toutes les sorties autour de vous." />  
+</plugin> 
    
 	
 	
