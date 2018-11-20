@@ -46,6 +46,16 @@
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
     </platform>
     <platform name="ios">
+		<edit-config target="NSLocationAlwaysUsageDescription" file="*-Info.plist" mode="merge">  
+<string>Wech a besoin d'accéder à votre localisation afin de fonctionner.</string>  
+</edit-config>  
+<edit-config target="NSLocationAlwaysAndWhenInUseUsageDescription" file="*-Info.plist" mode="merge">  
+<string>Wech utilise la géolocalisation pour trouver toutes les sorties autour de vous.</string>  
+</edit-config>  
+<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">  
+<string>Wech utilise la géolocalisation pour trouver toutes les sorties autour de vous.</string>  
+</edit-config> 
+		
         <icon height="57" platform="ios" src="www/res/icon/ios/Icon-57.png" width="57" />
         <icon height="114" platform="ios" src="www/res/icon/ios/Icon-114.png" width="114" />
         <icon height="40" platform="ios" src="www/res/icon/ios/Icon-40.png" width="40" />
