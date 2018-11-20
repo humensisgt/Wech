@@ -18,9 +18,6 @@
  */
 
 
-function onError(prob){
-	alert(prob);
-}
 
 
 function onSuccess(position) {
@@ -31,7 +28,7 @@ long = position.coords.longitude;
 //initMap();
 }
 
-<!--Function executes in the case of error-->
+
 function onError(error) {
 alert('code: ' + error.code + 'n' +
 'message: ' + error.message + 'n');
