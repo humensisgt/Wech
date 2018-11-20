@@ -16,6 +16,27 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+
+function onError(prob){
+	alert(prob);
+}
+
+
+function onSuccess(position) {
+//var element = document.getElementById('map');
+lati = position.coords.latitude;
+long = position.coords.longitude;
+	alert("latitude : "+lati+" et longitude : "+long);
+//initMap();
+}
+
+<!--Function executes in the case of error-->
+function onError(error) {
+alert('code: ' + error.code + 'n' +
+'message: ' + error.message + 'n');
+}
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -35,7 +56,8 @@ var app = {
     onDeviceReady: function() {
         console.log('Received Device Ready Event');
         console.log('calling setup push');
-		alert("pret");
+		navigator.geolocation.getCurrentPosition(onSuccess, onError);
+		//alert("pret");
         app.setupPush();
     },
     setupPush: function() {
