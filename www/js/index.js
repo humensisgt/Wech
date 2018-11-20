@@ -54,7 +54,7 @@ var app = {
         console.log('Received Device Ready Event');
         console.log('calling setup push');
 		alert("call geolocalisation")
-		navigator.geolocation.getCurrentPosition(this.onSuccess,this.onError);
+		//navigator.geolocation.getCurrentPosition(onSuccess,onError);
 		alert("fin");
 		//alert("pret");
         app.setupPush();
